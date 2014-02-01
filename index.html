@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+
+<html dir="ltr" lang="en-US">
+
+<head>
+	<title>Project HM</title>
+	<meta charset="utf-8">
+	<meta name="author" content="Sahil Gupta">
+	<meta name="keywords" content="Google Glass, Project HM, HM Glass, Sahil Gupta"/>
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	
+	<link rel="stylesheet" href="css/reveal.css">
+	<script src="script/jquery.min.js" type="text/javascript"></script>
+	<script src="script/jquery.reveal.js" type="text/javascript"></script>
+	<link rel="stylesheet" href="css/style.css"/>	
+
+	<! inspired by http://www.glasstesla.com >
+
+</head>
+
+<body>
+	<! Slide 1 >
+	<div id="slidecontainer">
+		<div id="cover" class="slide">
+			<div class="logo">
+				<p class="x-large">Project<b class="maroon"> HM</b></p>
+			</div>
+		</div>
+		<div class="scroll"></div>
+	</div>
+	<! Slide 2 >
+	<div id="slidecontainer">
+		<div id="quote" class="slide">
+				<div class="text">
+					<div class="large">Next Generation Apps</div>
+					<div class="small">Brought to you by</div>
+					<div class="large">The Next Generation</div>
+				</div>
+		</div>
+	</div>
+	<! Slide 3 >
+	<div id="slidecontainer">
+		<div id="submit" class="slide">
+				<div class="text">
+					<div class="large"><a href="#" data-reveal-id="submitModal" data-animation="fade">Submit</a> an Idea</div>
+				</div>
+		</div>
+	</div>
+	<! Slide 4 >
+	<div id="slidecontainer">
+		<div id="join" class="slide">
+				<div class="text">
+					<div class="large"><a href="#" data-reveal-id="joinModal" data-animation="fade">Join</a> the team</div>
+				</div>
+		</div>
+	</div>
+	
+<div id="submitModal" class="reveal-modal">
+	<h1>Submit an App Idea.</h1><br />
+     
+    <form  action="server/submit.php" method="POST">
+    	<input type="hidden" name="action" value="submit"/>
+    	<table class="tftable" border="1">
+			<tr><td id="desc">Name:</td><td><input name="name" type="text" value="" size="30"/></td></tr>
+			<tr><td id="desc">HM Email:</td><td><input name="email" type="email" value="" size="30"/></td></tr>
+			<tr><td id="desc">Platform:</td><td id="platformtd">
+				<label><input type="radio" name="platform" value="phone"/>&nbsp;Phone</label>
+					<span id="spacer"></span>
+				<label><input type="radio" name="platform" value="tablet"/>&nbsp;Tablet</label>
+					<span id="spacer"></span>
+				<label><input type="radio" name="platform" value="desktop"/>&nbsp;Desktop</label>
+					<span id="spacer"></span>
+				<label><input type="radio" name="platform" value="glass"/>&nbsp;Glass</label>
+			</td></tr>
+			<tr><td id="desc">App Idea:</td><td><textarea name="idea" rows="7" cols="30"></textarea></td></tr>
+		</table>
+
+    	<br /><input type="submit" value="Submit"/>
+	</form> 
+     
+     
+     
+     <a class="close-reveal-modal">&#215;</a>
+</div>
+<div id="joinModal" class="reveal-modal">
+     <h1>Join the Project HM Team.</h1><br />
+     
+     <form  action="server/join.php" method="POST">
+    	<input type="hidden" name="action" value="submit"/>
+    	<table class="tftable" border="1">
+			<tr><td id="desc">Name:</td><td><input name="name" type="text" value="" size="30"/></td></tr>
+			<tr><td id="desc">HM Email:</td><td><input name="email" type="email" value="" size="30"/></td></tr>
+			<tr><td id="desc">Specialties/<br />Languages:</td><td><textarea name="sospecial" rows="7" cols="30"></textarea></td></tr>
+		</table>
+
+    	<br /><input type="submit" value="Submit"/>
+	</form> 
+     <a class="close-reveal-modal">&#215;</a>
+</div>
+
+</body>
+
+</html>

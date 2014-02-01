@@ -1,0 +1,250 @@
+/* HM Glass CSS */
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font: inherit;
+    color: inherit;
+}
+
+a {
+    color: maroon;
+    text-decoration: none;
+}
+
+a:active{
+    background-color: transparent;
+}
+
+b {
+	font-weight: 700;
+	text-transform: uppercase;
+}
+
+body {
+    font-family: 'Roboto-Thin';
+    min-width: 640px;
+}
+
+#slidecontainer {
+	
+	display:table;
+	width: 100%;
+	
+}
+
+#cover {
+	
+	background-color:#efefef
+
+	
+}
+
+#slidecontainer .scroll 
+{
+    background-image: url("../img/scroll.png");
+    background-size: 50px auto;
+    bottom: 10%;
+    height: 50px;
+    opacity: 0;
+    left: 50%;
+    margin-left: -25px;
+    position: absolute;
+    width: 50px;
+
+    animation: inAndOut 2s 1s 3;
+    -webkit-animation: inAndOut 2s 1s 3;
+}
+
+@keyframes inAndOut {
+    0% {opacity: 0;}
+    50% {opacity: 1;}
+    100% {opacity: 0; transform: translateY(50px);}
+}
+
+@-webkit-keyframes inAndOut {
+    0% {opacity: 0;}
+    50% {opacity: 1;}
+    100% {opacity: 0; -webkit-transform: translateY(50px);}
+}
+
+#join {
+	
+	background-color:maroon;
+	
+}
+
+#join .text{
+	
+	text-align: center;
+	
+}
+
+#join .text a{
+	color: #fff;
+	text-align: center;
+	
+}
+
+.slide {
+	display: table-cell;
+	vertical-align: middle;
+    height: 450px;
+}
+
+#cover .logo {
+	text-align: center;	
+	
+}
+
+.maroon {
+	
+	color: maroon;
+		
+}
+
+#quote {
+	
+	background-color: maroon;
+	
+}
+
+#quote .text {
+	
+	text-transform: uppercase;
+	color:#fff;
+	text-align: center;
+	font-weight: 700;
+	
+}
+
+#submit {
+	
+	background-color: #efefef;
+	
+}
+
+#submit .text{
+	
+	text-align: center;
+	
+}
+
+.x-large {
+	
+	font-size:90px;
+	
+}
+
+.large {
+	
+	font-size:40px;
+	
+}
+
+.small{
+
+	text-transform: lowercase;
+	font-size:20px;
+	
+	}
+
+/* RESPONSIVE DESIGN */
+
+@-ms-viewport {
+    width: device-width;
+}
+
+
+
+
+@media screen and (min-width: 850px) {
+
+    .slide {
+        height: 600px;
+    }
+
+    #head .logo {
+        font-size: 60px;
+    }
+
+    #quote .text {
+        font-size: 45px;
+        line-height: 45px;
+    }
+}
+
+
+@media screen and (min-width: 1280px) {
+    .slide {
+        height: 700px;
+    }
+
+    #head .logo {
+        font-size: 65px;
+    }
+
+    #quote .text {
+        font-size: 50px;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+
+}
+
+@font-face {
+    font-family: Roboto-Thin;
+    src: local(Roboto-Thin), url('../fonts/Roboto-Thin.ttf') format('opentype');
+}
+@font-face {
+    font-family: Roboto;
+    src: local(Roboto-Regular), url('../fonts/Roboto-Regular.ttf') format('opentype');
+}
+@font-face {
+    font-family: Roboto-Bold;
+    src: local(Roboto-Bold), url('../fonts/Roboto-Bold.ttf') format('opentype');
+}
+
+.reveal-modal h1 {
+	font-size:2em;
+}
+
+.reveal-modal table {
+	width:100%;
+}
+
+.reveal-modal #desc {
+	width:30%;
+	font-size:1.3em;
+	height:50px;
+}
+
+.reveal-modal input[type=text], .reveal-modal input[type=email] {
+	height:30px;
+	padding:5px;
+	width:95%;
+}
+
+.reveal-modal textarea {
+	padding:5px;
+	width:95%;
+}
+
+.reveal-modal input[type=submit] {
+	font-size:1.4em;
+	padding:5px;
+	width:98%;
+}
+
+#spacer {
+	display:inline-block;
+	width: 10px;
+}
+
+#platformtd {
+	font-size:1.2em;
+}
+
+
